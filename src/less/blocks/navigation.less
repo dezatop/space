@@ -1,0 +1,41 @@
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation__list {
+    .list-reset ();
+
+    width: 389px;
+    height: auto;
+
+    margin-right: 211px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation__item {
+    padding-right: 40px;
+
+    &:last-child {
+        padding-right: 0;
+    }
+}
+
+.navigation__link {
+    .a-reset ();
+    .font-text .style-1 ();
+
+    color: @main-color;
+}
+
+.navigation__tel {
+    .a-reset ();
+    .font-text .style-1 ();
+
+    margin-right: 74px;
+
+    color: @main-color;
+}

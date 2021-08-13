@@ -1,0 +1,238 @@
+@font-face {
+  font-family: 'Neue Machina Bold';
+  src: url('../fonts/NeueMachina-Bold.eot');
+  src: local('../fonts/Neue Machina Bold'), local('../fonts/NeueMachina-Bold'), url('../fonts/NeueMachina-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/NeueMachina-Bold.woff2') format('woff2'), url('../fonts/NeueMachina-Bold.woff') format('woff'), url('../fonts/NeueMachina-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Neue Machina Normal';
+  src: url('../fonts/NeueMachina-Regular.eot');
+  src: local('../fonts/Neue Machina Regular'), local('../fonts/NeueMachina-Regular'), url('../fonts/NeueMachina-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/NeueMachina-Regular.woff2') format('woff2'), url('../fonts/NeueMachina-Regular.woff') format('woff'), url('../fonts/NeueMachina-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Neue Machina 500';
+  src: url('../fonts/NeueMachina-Medium.eot');
+  src: local('../fonts/Neue Machina Medium'), local('../fonts/NeueMachina-Medium'), url('../fonts/NeueMachina-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/NeueMachina-Medium.woff2') format('woff2'), url('../fonts/NeueMachina-Medium.woff') format('woff'), url('../fonts/NeueMachina-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Neue Machina 800';
+  src: url('../fonts/NeueMachina-Ultrabold.eot');
+  src: local('../fonts/Neue Machina Ultrabold'), local('../fonts/NeueMachina-Ultrabold'), url('../fonts/NeueMachina-Ultrabold.eot?#iefix') format('embedded-opentype'), url('../fonts/NeueMachina-Ultrabold.woff2') format('woff2'), url('../fonts/NeueMachina-Ultrabold.woff') format('woff'), url('../fonts/NeueMachina-Ultrabold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: url(../img/bg-img.png);
+}
+.header__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 57px;
+  padding-bottom: 50px;
+}
+.header__logo {
+  width: 96px;
+  height: 39px;
+  margin-right: 204px;
+}
+.header__decor-line {
+  width: 1200px;
+  height: 2px;
+  background-color: #C4C4C4;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.wrapper {
+  width: 100%;
+  max-width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  width: 389px;
+  height: auto;
+  margin-right: 211px;
+  display: flex;
+  justify-content: space-between;
+}
+.navigation__item {
+  padding-right: 40px;
+}
+.navigation__item:last-child {
+  padding-right: 0;
+}
+.navigation__link {
+  text-decoration: none;
+  font-family: 'Neue Machina Normal';
+  font-size: 16px;
+  line-height: 19px;
+  color: #212121;
+}
+.navigation__tel {
+  text-decoration: none;
+  font-family: 'Neue Machina Normal';
+  font-size: 16px;
+  line-height: 19px;
+  margin-right: 74px;
+  color: #212121;
+}
+.main__start-screen {
+  padding-top: 30px;
+}
+.main__about {
+  padding-top: 200px;
+}
+.main__services {
+  padding-top: 200px;
+}
+.start-screen__slogan {
+  font-family: 'Neue Machina Normal';
+  font-size: 16px;
+  line-height: 19px;
+  width: 300px;
+  margin-left: 300px;
+}
+.start-screen__btn-video {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  margin-left: 829px;
+}
+.start-screen__tickers {
+  overflow: hidden;
+  width: 1200px;
+  margin-top: 121px;
+}
+.heading {
+  font-family: 'Neue Machina Bold';
+  font-size: 85px;
+  line-height: 82px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: block;
+  padding-top: 150px;
+}
+.heading__title--top {
+  margin-left: 300px;
+}
+.accent {
+  color: #E00822;
+}
+.about__wrapper-section-title {
+  display: flex;
+}
+.about__description-top {
+  font-family: 'Neue Machina Normal';
+  font-size: 30px;
+  line-height: 36px;
+  width: 599px;
+  margin: 0;
+  margin-left: 202px;
+}
+.about__slider {
+  padding-top: 100px;
+}
+.about__description-bottom {
+  padding-top: 207px;
+}
+.section-title {
+  font-family: 'Neue Machina Bold';
+  font-size: 70px;
+  line-height: 68px;
+  text-transform: uppercase;
+  color: #E00822;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: block;
+}
+.description-bottom__text {
+  font-family: 'Neue Machina Normal';
+  font-size: 55px;
+  line-height: 66px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.description-bottom__text-position {
+  margin-left: 300px;
+}
+.description-bottom__decor-elem-2 {
+  padding-left: 224px;
+}
+.services__price {
+  padding-top: 100px;
+  display: flex;
+}
+.price__service-description {
+  width: 380px;
+  height: 735px;
+  margin-right: 30px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #212121;
+}
+.price__link-booking {
+  align-self: flex-end;
+}
+.service-description__title {
+  font-family: 'Neue Machina Normal';
+  font-size: 30px;
+  line-height: 36px;
+  font-family: 'Neue Machina Bold';
+}
+.service-description__description {
+  font-family: 'Neue Machina Normal';
+  font-size: 16px;
+  line-height: 19px;
+  font-size: 14px;
+  line-height: 17px;
+}
+.service-description__service-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  list-style: url("../img/svg/check.svg");
+  padding-top: 45px;
+}
+.service-description__service-list-item {
+  font-family: 'Neue Machina Normal';
+  font-size: 16px;
+  line-height: 19px;
+  font-size: 14px;
+  line-height: 14px;
+  padding-bottom: 15px;
+}
+.service-description__service-list-item:last-child {
+  padding-bottom: 0;
+}
+.service-description__price-list {
+  align-self: flex-end;
+}
