@@ -2,19 +2,116 @@
     .font-text .style-1 ();
 
     width: 300px;
-
-    
+    margin-top: 50px;
     margin-left: 300px;
+    margin-bottom: 0;
 }
 
 .start-screen__btn-video{
     .btn-reset ();
 
     margin-left: 829px;
+
+    transition: all 3s linear .1s;
+    stroke: @accent-color;
+    --fill-triangle: @accent-color;
+
+    &:hover {
+        --fill-triangle: #FFFFFF;
+        --stroke-triangle: #FFFFFF;
+        --fill-circle: @accent-color;
+    }
+}
+
+.start-screen__img-play {
+    width: 162px;
+    height: 162px;
 }
 
 .start-screen__tickers {
     overflow: hidden;
-    width: 1200px;
+    width: auto;
+    height: 186px;
     margin-top: 121px;
 }
+
+.start-screen__popup-video {
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.start-screen__popup-bg-video {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+
+    background-color: @main-color;
+    opacity: 0.9;
+    z-index: 1000;
+}
+
+.start-screen__popup-btn-close {
+    .btn-reset ();
+
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2000;
+}
+
+.start-screen__popup-img-close {
+    width: 13px;
+    height: 13px;
+
+    fill: @decor-color;
+    &:hover {
+        fill: @accent-color;
+    }
+}
+
+.start-screen__popup-videoplayer {
+    position: relative;
+    margin-right: 100px;
+    z-index: 2000;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    
+}
+
+// .test {
+//     background-color: #FFFFFF;
+
+//     position: absolute;
+//     left: 0;
+//     width: 100vw;
+
+//     padding-top: 23px;
+//     padding-bottom: 23px;
+
+//     border-top: 1px solid @main-color;
+//     border-bottom: 1px solid @main-color;
+// }
+
+// .wrap {
+//     animation: anim 5s linear infinite;
+//     width: auto;
+//     height: 32px;
+//     background-image: url("../img/svg/text-tickers-white.svg");    
+//     background-repeat: repeat-x;
+// }
+
+// @keyframes anim {
+//     from {
+//         background-position: 0 0;
+//      }
+//      to {
+//         background-position: -978px 0;
+//      }
+//   }

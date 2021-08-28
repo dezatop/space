@@ -64,8 +64,9 @@
 
     .style-tickers {
         font-family: 'Neue Machina 800';
-        font-size: 16px;
-        line-height: 15px;
+        font-size: 40px;
+        line-height: 39px;
+        text-transform: uppercase;
     }   
 }
 
@@ -95,6 +96,10 @@
 .a-reset () {
     text-decoration: none;
     color: @main-color;
+
+    &:hover {
+        color: @accent-color;
+    }
 }
 
 .heading-reset () {

@@ -1,0 +1,68 @@
+.tickers__wrapper {
+    position: absolute;
+    z-index: -1;
+
+    width: 100vw;
+    height: auto;
+
+    padding-top: 23px;
+    padding-bottom: 23px;
+
+    border-top: 1px solid @main-color;
+    border-bottom: 1px solid @main-color;
+
+        &--top {
+            background-color: @accent-color;
+            left: 0;
+            top: 805px;
+
+            border-top: 1px solid @accent-color;
+            border-bottom: 1px solid @accent-color;
+
+            transform: rotate(1.39deg);
+        }
+
+        &--bottom {
+            background-color: #FFFFFF;
+            left: 0;
+            top: 850px;
+
+            transform: rotate(-1.07deg);
+        }
+}
+
+.tickers__content {
+    width: auto;
+    height: 32px;    
+    background-repeat: repeat-x;
+
+    &--top {
+        // background-image: url("../img/svg/text-tickers-red.svg");
+        background-image: url("../img/text-tickers-red-test.png");
+        animation: animRightToleft 7s linear infinite;
+    }
+
+    &--bottom {
+        // background-image: url("../img/svg/text-tickers-white.svg");
+        background-image: url("../img/text-tickers-white-test.png");
+        animation: animLeftToRight 7s linear infinite;
+    }
+}
+
+@keyframes animLeftToRight {
+    from {
+        background-position: 0 0;
+     }
+     to {
+        background-position: 977px 0;
+     }
+  }
+
+  @keyframes animRightToleft {
+    from {
+        background-position: 0 0;
+     }
+     to {
+        background-position: -977px 0;
+     }
+  }

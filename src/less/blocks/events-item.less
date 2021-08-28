@@ -33,19 +33,26 @@
 }
 
 .events-item__link-more {
-    .a-reset ();
-    .font-text .style-6 ();
-    text-transform: uppercase;
-    color: @main-color; 
+    .a-reset (); 
+
+    display: flex;
+    align-items: center;
+
+    stroke: @main-color;
+        &:hover {
+            color: @accent-color;
+
+            stroke: @accent-color;
+        }
 }
 
 .events-item__cost {
-    height: 100%;
+    
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 1 1 auto;
+    align-self: stretch;
 }
 
 .events-item__price-tag {

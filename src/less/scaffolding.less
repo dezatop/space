@@ -4,11 +4,23 @@
 
 body {
     background-image: url(../img/bg-img.png);
-    background-size: 1600px auto;
 
     color: @main-color;
 
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.up-link {
+    .a-reset ();
+    .font-text .style-tickers ();
+    position: fixed;
+    z-index: -2;
+    right: 20px;
+    bottom: 50px;
 }

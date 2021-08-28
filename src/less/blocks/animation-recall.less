@@ -1,0 +1,31 @@
+.animation-recall {
+    &--in {
+        animation: animRecallIn 1s ;
+        animation-fill-mode: both;
+    }
+
+    &--out {
+        animation: animRecallOut 1s ;
+        animation-fill-mode: both;
+    }
+}
+
+@keyframes animRecallIn {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(57px);
+    };
+}
+
+@keyframes animRecallOut {
+    0% {
+        transform: translateX(57px);
+    }
+
+    100% {
+        transform: translateX(0);
+    };
+} 

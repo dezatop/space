@@ -7,7 +7,8 @@
     "browser-sync": "^2.27.5",
     "gulp": "^4.0.2",
     "gulp-imagemin": "^7.1.0",
-    "gulp-plumber": "^1.2.1"
+    "gulp-plumber": "^1.2.1",
+    "gulp-svg-sprite": "^1.5.0"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,7 @@
   "dependencies": {
     "gulp-less": "^5.0.0",
     "gulp-svgstore": "^8.0.0",
-    "less": "^4.1.1"
+    "less": "^4.1.1",
+    "swiper": "^7.0.1"
   }
 }

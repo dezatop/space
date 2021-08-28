@@ -6,7 +6,9 @@ const less = require("gulp-less");
 const browserSync = require("browser-sync").create();
 
 gulp.task("html", () => {
-  return gulp.src("src/*.html").pipe(gulp.dest("./build"));
+  return gulp
+  .src("src/*.html")
+  .pipe(gulp.dest("./build"));
 });
 
 gulp.task("css", function () {
@@ -18,6 +20,12 @@ gulp.task("css", function () {
       .pipe(less())
       .pipe(gulp.dest("build/css"))
   );
+});
+
+gulp.task("js", () => {
+  return gulp
+  .src("src/script/*.js")
+  .pipe(gulp.dest("build/script"));
 });
 
 gulp.task("imagemin", function () {
@@ -37,12 +45,14 @@ gulp.task("watch", () => {
   gulp.watch("./src/less/**/*.less", gulp.series("css"));
   gulp.watch("./src/img/**", gulp.series("imagemin"));
   gulp.watch("./src/*.html", gulp.series("html"));
+  gulp.watch("./src/script/*.js", gulp.series("js"));
   gulp.watch("./src/less/**/*.less").on("change", browserSync.reload);
   gulp.watch("./src/*.html").on("change", browserSync.reload);
+  gulp.watch("./src/script/*.js").on("change", browserSync.reload);
 });
 
 //Таск по умолчанию, Запускает del, styles, scripts и watch
 gulp.task(
   "start",
-  gulp.series(gulp.parallel("imagemin", "html", "css"), "watch")
+  gulp.series(gulp.parallel("imagemin", "html", "css", "js"), "watch")
 );
