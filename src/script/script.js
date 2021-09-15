@@ -18,7 +18,7 @@ openBtnPopupVideo.addEventListener("click", openPopupVideo);
 closeBtnPopupVideo.addEventListener("click", closePopupVideo);
 closeAreaPopupVideo.addEventListener("click", closePopupVideo);
 
-    // Анимация появления блоков
+// Анимация появления блоков
 
 let animationBlocks = document.querySelectorAll(".animation")
 
@@ -67,13 +67,11 @@ recallLink.addEventListener("mouseleave", animationRecallOut);
     // Слайдер
 
 const swiperAbout = new Swiper('.slider-about__swiper', {
-
     direction: 'horizontal',
     loop: true,
     slidesPerView: 1.3,
     spaceBetween: 60,
 
-  
     navigation: {
       nextEl: '.slider-about__button-right',
       prevEl: '.slider-about__button-left',
@@ -85,7 +83,7 @@ const swiperAbout = new Swiper('.slider-about__swiper', {
       },
   });
 
- 
+
 let currSlide;
 let numSlide = document.querySelector(".slider-aboutabout__fraction-text");
 
@@ -109,6 +107,7 @@ const swiperServices = new Swiper('.slider-services__swiper', {
     direction: 'horizontal',
     loop: false,
     slidesPerView: 4.2,
+    initialSlide:1
   });
 
   // Услуги
