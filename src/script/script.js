@@ -50,9 +50,6 @@ window.addEventListener("scroll", animation);
 const recallLink = document.querySelector(".recall__link");
 const recallText = document.querySelector(".recall__text");
 
-function animationRecall() {
-    elem.classList.add("animationRecall--active");
-}
 
 function animationRecallIn () {
     recallText.classList.add("animation-recall--in");
@@ -67,22 +64,68 @@ function animationRecallOut () {
 recallLink.addEventListener("mouseenter", animationRecallIn);
 recallLink.addEventListener("mouseleave", animationRecallOut);
 
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
+    // Слайдер
+
+const swiperAbout = new Swiper('.slider-about__swiper', {
+
     direction: 'horizontal',
     loop: true,
     slidesPerView: 1.3,
     spaceBetween: 60,
+
   
-    // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-right',
-      prevEl: '.swiper-button-left',
+      nextEl: '.slider-about__button-right',
+      prevEl: '.slider-about__button-left',
     },
 
     pagination: {
-        el: '.swiper-pagination-progressbar',
+        el: '.slider-about__progressbar',
         type: 'progressbar',
       },
   });
+
+ 
+let currSlide;
+let numSlide = document.querySelector(".slider-aboutabout__fraction-text");
+
+swiperAbout.on('activeIndexChange', function () {
+    currSlide = document.querySelector(".swiper-slide-next").ariaLabel;
+    console.log(currSlide);
+    
+    numSlide.textContent = currSlide;
+});
+
+function addNumSlide () {
+    currSlide = document.querySelector(".swiper-slide-active").ariaLabel;
+    console.log(currSlide);
+    
+    numSlide.textContent = currSlide;
+};
+
+document.addEventListener("DOMContentLoaded", addNumSlide);
+
+const swiperServices = new Swiper('.slider-services__swiper', {
+    direction: 'horizontal',
+    loop: false,
+    slidesPerView: 4.2,
+  });
+
+  // Услуги
+
+let servDescrWrapper = document.querySelector(".price__service-description");
+let servDescr = document.querySelector(".service-description__wrapper");
+console.log(servDescrWrapper);
+
+
+servDescrWrapper.addEventListener("mouseenter", () => {
+    servDescr.classList.toggle("service-description__wrapper--none");
+
+});
+servDescrWrapper.addEventListener("mouseleave", () => {
+    servDescr.classList.toggle("service-description__wrapper--none");
+
+});
+
+
 

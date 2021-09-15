@@ -56,3 +56,4 @@ gulp.task(
   "start",
   gulp.series(gulp.parallel("imagemin", "html", "css", "js"), "watch")
 );
+ 

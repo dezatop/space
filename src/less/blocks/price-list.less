@@ -3,6 +3,7 @@
     padding-bottom: 15px;
     
     display: flex;
+    align-items: center;
 
     border-bottom: 1px solid @decor-color;
         &:last-child {
@@ -16,23 +17,59 @@
     font-size: 20px;
     line-height: 19px;
 
+    min-width: 76px;
+
+    // display: none;
+
+    white-space: nowrap;
+
         &--next {
             .font-text .style-6 ();
             font-size: 14px;
             line-height: 14px;
+
+            padding-top: 5px;
+
+            &:last-child {
+                padding-top: 10px;
+            }
         }
-    
-    
+
+        &--pre {
+            color: @accent-color;
+        }
 }
+
+.price-list__img-grivna {
+    width: 12px;
+    height: 15px;
+
+    fill: @main-color;
+
+        &--min {
+            width: 8px;
+            height: 11px;
+        }
+
+        &--pre {
+            fill: @accent-color;
+        }
+}
+
+
 
 .price-list__time {
     .font-text .style-1 ();
     font-size: 12px;
     line-height: 12px;
 
+    padding-left: 10px;
+
         &--next {
             font-size: 10px;
             line-height: 10px;
+
+            padding-top: 7px;
         }
 }
 
