@@ -98,6 +98,11 @@ body {
 .header__img-telegram:hover {
   --telegram-header: #E00822;
 }
+@media (max-width: 375px) {
+  .header__wrapper {
+    padding: ;
+  }
+}
 .wrapper {
   width: 100%;
   max-width: 1230px;
@@ -147,6 +152,17 @@ body {
 }
 .navigation__tel:hover {
   color: #E00822;
+}
+@media (max-width: 375px) {
+  .navigation {
+    position: absolute;
+    flex-direction: column;
+  }
+  .navigation__list {
+    flex-direction: column;
+    margin-right: 0;
+    width: initial;
+  }
 }
 .main__start-screen {
   margin-top: 150px;

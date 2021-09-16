@@ -39,3 +39,15 @@
 
     color: @main-color;
 }
+
+@media (max-width: 375px) {
+    .navigation{
+        position: absolute;
+        flex-direction: column;
+    }
+    .navigation__list{
+        flex-direction: column;
+        margin-right: 0;
+        width: initial;
+    }
+}
