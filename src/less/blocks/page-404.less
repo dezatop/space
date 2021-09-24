@@ -1,0 +1,196 @@
+.wrapper404 {
+  padding-left: 200px;
+
+  &-header {
+    padding-top: 65px;
+    padding-bottom: 156px;
+  }
+
+  &-description {
+    width: 100%;
+    max-width: 900px;
+
+    &-title {
+      .font-heading .h1();
+
+      span {
+        text-align: right;
+        display: block;
+        margin-top: 10px;
+      }
+    }
+
+    &-errorText {
+      .font-text .style-4();
+      margin-top: 30px;
+    }
+
+    &-linkBack {
+      margin-top: 86px;
+
+      a {
+        font-family: 'Neue Machina Normal';
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 17px;
+        text-transform: uppercase;
+        padding: 36px 72px;
+        background: #E00822;
+        color: #FFFFFF;
+      }
+    }
+  }
+}
+
+.start-screen__tickers-404 {
+  width: auto;
+  height: 186px;
+  transform: rotate(4deg);
+  position: fixed;
+}
+
+.tickers__wrapper-404 {
+
+  z-index: -1;
+
+  width: 100vw;
+  height: auto;
+
+  padding-top: 23px;
+  padding-bottom: 23px;
+
+  border-top: 1px solid @main-color;
+  border-bottom: 1px solid @main-color;
+
+  &--top {
+    background-color: @accent-color;
+    left: 0;
+    top: 805px;
+    width: 200vw;
+    border-top: 1px solid @accent-color;
+    border-bottom: 1px solid @accent-color;
+
+    transform: rotate(-14.27deg) translateX(-50px);
+  }
+
+  &--bottom {
+    background-color: #FFFFFF;
+    left: 0;
+    top: 850px;
+    width: 177vw;
+    transform: rotate(-17.27deg) translateX(-50px);
+  }
+}
+
+.tickers__content-404 {
+  width: auto;
+  height: 32px;
+  background-repeat: repeat-x;
+
+  &--top {
+    // background-image: url("../img/svg/text-tickers-red.svg");
+    background: url("../img/text-tickers-red-test.png");
+    animation: animRightToleftt 7s linear infinite;
+  }
+
+  &--bottom {
+    // background-image: url("../img/svg/text-tickers-white.svg");
+    background: url("../img/text-tickers-white-test.png");
+    animation: animLeftToRightt 7s linear infinite;
+  }
+}
+
+@keyframes animLeftToRightt {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 977px 0;
+  }
+}
+
+@keyframes animRightToleftt {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -977px 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapper404 {
+    padding: 0 15px;
+
+    &-header {
+      padding: 25px 0;
+      border-bottom: 2px solid #C4C4C4;
+    }
+
+    &-description {
+      margin-top: 143px;
+
+      &-title {
+        font-size: 33px;
+        line-height: 32px;
+
+        span {
+          margin-left: 117px;
+          text-align: initial;
+        }
+      }
+
+      &-linkBack {
+        margin-top: 66px;
+
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 16px;
+          line-height: 15px;
+          padding: 22px 68px;
+        }
+      }
+
+      &-errorText {
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+
+  .header__logo {
+    width: 61px;
+    height: 24px;
+  }
+
+  .start-screen__tickers-404 {
+    margin-top: 80px;
+  }
+
+  .tickers__wrapper-404 {
+    padding: 11px 0;
+
+    &--top {
+      top: initial;
+    }
+
+    &--bottom {
+      top: initial;
+    }
+  }
+
+  .tickers__content-404 {
+    height: 25px;
+
+    &--top {
+      background-size: cover;
+    }
+
+    &--bottom {
+      background-size: cover;
+    }
+  }
+}

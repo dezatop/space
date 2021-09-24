@@ -72,20 +72,17 @@
 .slider-about__button-right {
     width: 120px;
     height: 120px;
-
     position: absolute;
     top: 202px;
     left: 870px;
-
+    cursor: pointer;
     z-index: 2;
 }
 
 .slider-about__progressbar {
     width: 960px !important;
     height: 2px !important;
-
     top: unset !important;
-    bottom: 45px;
     left: 60px !important;
     
     --swiper-theme-color: @accent-color;
@@ -94,7 +91,29 @@
 .slider-aboutabout__fraction-text {
     .font-text .style-6 ();
 
-    position: absolute;
-    top: 595px;
-    left: 0;
+}
+
+.slider-about__fraction {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 500px) {
+    .slider-about__button-right{
+        display: none;
+    }
+
+    .slider-about__fraction{
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .slider-about__progressbar{
+        left: 47px!important;
+        width: 293px !important;
+    }
+
+    .slider-aboutabout__fraction-text{
+        font-size: 14px;
+    }
 }

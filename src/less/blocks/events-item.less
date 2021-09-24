@@ -1,70 +1,173 @@
 .events-item__when {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    max-width: 183px;
+  max-width: 183px;
 
-    margin-right: 117px;
+  margin-right: 117px;
+}
+
+.events-item-organizer-mobile {
+  display: none;
+}
+
+.events-item-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .events-item__date {
-    .font-text .style-5 ();
+  .font-text .style-5 ();
 
-    padding-bottom: 10px;
 }
 
 .events-item__time {
-    .font-text .style-6 ();
+  .font-text .style-6 ();
 }
 
 .events-item__what {
-    max-width: 457px;
-    margin-right: 142px;
+  max-width: 457px;
+  margin-right: 142px;
 }
 
 .events-item__headline {
-    .font-text .style-4 ();
-    padding-bottom: 20px;
+  .font-text .style-4 ();
+  padding-bottom: 20px;
 }
 
 .events-item__description {
-    .font-text .style-1 ();
-    padding-bottom: 43px;
+  .font-text .style-1 ();
+  padding-bottom: 43px;
 }
 
 .events-item__link-more {
-    .a-reset (); 
+  .a-reset ();
 
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    stroke: @main-color;
-        &:hover {
-            color: @accent-color;
+  stroke: @main-color;
 
-            stroke: @accent-color;
-        }
+  &:hover {
+    color: @accent-color;
+
+    stroke: @accent-color;
+  }
 }
 
 .events-item__cost {
-    
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-self: stretch;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: stretch;
 }
 
 .events-item__price-tag {
-    .font-text .style-4 ();
+  .font-text .style-4 ();
 
-    display: block;
+  display: block;
 }
 
 .events-item__organizer {
-    .a-reset ();
-    .font-text .style-6 ();
-    color: @main-color;
+  .a-reset ();
+  .font-text .style-6 ();
+  color: @main-color;
 
-    display: block;
+  display: block;
 }
+
+.events-item-organizer-mobile {
+  display: none;
+}
+
+.donwnload-more {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .events-item__when {
+    flex-direction: row;
+    margin-right: 0;
+    max-width: initial;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .events-item__date {
+    font-size: 20px;
+    line-height: 19px;
+    padding-bottom: 0;
+  }
+
+  .events-item__time {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .events-item__what {
+    margin-right: 0;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  .events-item__description {
+    font-size: 14px;
+    line-height: 17px;
+    padding-bottom: 30px;
+  }
+
+  .events-item__link-more {
+    display: none;
+  }
+
+  .events-item-organizer-mobile {
+    font-family: 'Neue Machina Normal';
+    font-size: 14px;
+    line-height: 14px;
+    outline: none;
+    text-decoration: none;
+    color: #212121;
+    display: initial;
+  }
+
+  .events-item__organizer {
+    display: none;
+  }
+
+  .events-item__cost {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .events-item-organizer-mobile-link {
+    display: initial;
+  }
+
+  .events-item__price-tag {
+    font-size: 20px;
+    line-height: 19px;
+  }
+
+  .events-item-date {
+    margin-bottom: 0;
+  }
+
+  .donwnload-more {
+    font-family: 'Neue Machina Normal';
+    font-weight: bold;
+    line-height: 15px;
+    margin: 50px 15px 0px 15px;
+    background: #E00822;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 22.5px 0;
+    color: #FFFFFF;
+  }
+}
+

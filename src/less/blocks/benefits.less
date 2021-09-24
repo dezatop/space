@@ -1,53 +1,92 @@
-.benefits__container{
-    padding-top: 100px;
 
-    display: grid;
-    grid-template-columns: repeat(4, 280px);
-    grid-template-rows: repeat(2, 314px);
-    grid-gap: 20px;
+
+.benefits__container {
+  padding-top: 100px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 280px);
+  grid-template-rows: repeat(2, 314px);
+  grid-gap: 20px;
 }
 
 .container__item {
-    width: 280px;
-    height: 314px;
+  width: 280px;
+  height: 314px;
 
-    &--1 {
-        grid-column-start: 2;
-        grid-column-end: 3;
-    }
+  &--1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
 
-    &--4 {
-        grid-column-start: 3;
-        grid-column-end: 4;
-    }
+  &--4 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
 }
 
 .benefits__num {
-    .font-text .style-4 ();
+  .font-text .style-4 ();
 }
 
 .benefits__title {
-    .font-heading .h3 ();
-    .heading-reset ();
+  .font-heading .h3 ();
+  .heading-reset ();
 }
 
 .benefits__info {
-    .font-text .style-1 ();
-    color: @additional-text-color;
-    .p-reset ();
-    padding-top: 20px;
+  .font-text .style-1 ();
+  color: @additional-text-color;
+  .p-reset ();
+  padding-top: 20px;
 
-        &--position {
-            padding-top: 56px;
-        }
+  &--position {
+    padding-top: 56px;
+  }
 }
 
 .benefits__decor-elem {
-    width: 280px;
-    height: 2px;
+  width: 280px;
+  height: 2px;
 
-    margin-top: 10px;
-    margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 
-    background-color: @main-color;
+  background-color: @main-color;
+}
+
+
+@media (max-width: 500px) {
+  .benefits__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    gap: 30px;
+  }
+
+  .container__item {
+    width: 100%;
+    height: initial;
+  }
+
+  .benefits__decor-elem {
+    width: 100%;
+  }
+
+  .benefits__num {
+    .font-text .style-6 ();
+  }
+
+  .benefits__title {
+    .font-text .style-6 ();
+  }
+
+  .benefits__info {
+    padding-top: 10px;
+    font-size: 14px;
+  }
+  .wrapper-slider-service-liner {
+    overflow: hidden;
+  }
 }

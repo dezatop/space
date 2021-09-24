@@ -1,53 +1,124 @@
 .service-description__title {
-    .heading-reset ();
-    .font-text .style-2 ();
-    font-family: 'Neue Machina Bold';
+  .heading-reset ();
+  .font-text .style-2 ();
+  font-family: 'Neue Machina Bold';
 }
 
 .service-description__description {
-    .p-reset ();
-    .font-text .style-1 ();
-    font-size: 14px;
-    line-height: 17px;
-    margin-top: 30px;
+  .p-reset ();
+  .font-text .style-1 ();
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 30px;
 
-        &--pre {
-            margin-bottom: 516px;
-        }
+  &--pre {
+    margin-bottom: 516px;
+  }
 }
 
 // .service-description__wrapper {
-    
+
 // }
 
 .service-description__wrapper--none {
-    display: none;
+  display: none;
 }
 
 .service-description__service-list {
-    .list-reset ();
-    list-style: url("../img/svg/check.svg");
+  .list-reset ();
+  list-style: url("../img/svg/check.svg");
 
-    flex: 1 1 auto;
-    
-    margin-top: 45px;
+  flex: 1 1 auto;
+
+  margin-top: 45px;
 }
 
 .service-description__service-list-item {
-    .font-text .style-1 ();
-    font-size: 14px;
-    line-height: 14px;
+  .font-text .style-1 ();
+  font-size: 14px;
+  line-height: 14px;
 
-    margin-left: 30px;
+  margin-left: 30px;
 
-    padding-bottom: 15px;
-    &:last-child {
-        padding-bottom: 0;
-    }
+  padding-bottom: 15px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
 }
 
 .service-description__price-list {
-    .list-reset ();
+  .list-reset ();
 
-    margin-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.service-description-initialView {
+  max-width: 380px;
+  height: 735px;
+  flex-direction: column;
+  border: 1px solid;
+  padding: 30px 37px 30px 30px;
+  display: flex;
+}
+
+.price-service-main {
+  display: none;
+}
+
+.price-service-main-active {
+  display: initial !important;
+}
+
+.service-description-initialView-false {
+  display: none !important;
+}
+
+.service-description-initialView-active {
+  display: flex;
+}
+
+.service-description-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.service-description-cost {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.down_arrow {
+  height: 26px;
+  width: 26px;
+}
+
+@media (max-width: 500px) {
+  .service-description__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .service-description__description {
+    margin-top: 20px;
+  }
+
+  .service-description__service-list-item {
+    margin-left: 23px;
+  }
+
+  .service-description__service-list {
+    margin-top: 30px;
+  }
+
+  .service-description-initialView {
+    display: none;
+  }
+
+  .price-service-main {
+    display: initial;
+  }
 }

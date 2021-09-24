@@ -1,21 +1,38 @@
 .services__price {
-    margin-top: 100px;
-
-    display: flex;
+  margin-top: 100px;
+  gap: 30px;
+  display: flex;
 }
 
 .services__benefits {
-    margin-top: 200px;
+  margin-top: 200px;
 }
 
 .services__slider-services {
-    min-width: 0;
-    min-height: 330px;
-    height: auto;
-    margin-top: 200px;
-    // position: absolute;
-    // top: 100;
-    // left: 0;
+  min-width: 0;
+  min-height: 330px;
+  height: auto;
+  margin-top: 200px;
+  // position: absolute;
+  // top: 100;
+  // left: 0;
 
-    cursor: url("../img/cursor.png"),  no-drop;
+  cursor: url("../img/cursor.png"), no-drop;
+}
+
+@media (max-width: 500px) {
+  .services__price {
+    margin-top: 50px;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .services__benefits {
+    margin-top: 100px;
+  }
+
+  .services__slider-services {
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
 }
