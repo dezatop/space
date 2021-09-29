@@ -145,13 +145,16 @@ const swiperServices = new Swiper('.slider-services__swiper', {
         let activeMenu = document.body
 
         const clickOnBurger = () => {
+            console.log("работатет")
+            console.log(navigation)
             navigation.classList.toggle('active')
             menu.classList.toggle('active')
             activeMenu.classList.toggle('menuActive')
         }
         menu.addEventListener('click', clickOnBurger )
-        linkInMenu.forEach(r=> r.addEventListener('click', clickOnBurger ))
-
+        if(mobileWidth < 510){
+            linkInMenu.forEach(r=> r.addEventListener('click', clickOnBurger ))
+        }
     })
 
 
